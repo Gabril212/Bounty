@@ -1,4 +1,7 @@
+
 ### Step 2: Challenge Part 2
+
+In the second challenge, you are required to explain whether the statement "This delete user functionality can be done after authentication" is a good idea or a bad idea based on your knowledge of authentication and authorization. 
 
 #### Explanation:
 
@@ -29,4 +32,4 @@ While authentication is crucial, it is equally important to implement proper aut
 
 Here is a simple diagram illustrating the difference between authentication and authorization in this context:
 
-![Simple.png](../Simple.png)
+![Simple.png](../../mnt/data/image.png)
