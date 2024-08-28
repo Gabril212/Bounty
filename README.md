@@ -33,3 +33,32 @@ While authentication is crucial, it is equally important to implement proper aut
 Here is a simple diagram illustrating the difference between authentication and authorization in this context:
 
 ![Simple.png](Simple.png)
+
+
+
+
+
+
+
+### Step 1: Implementing the Delete User Functionality
+
+**File Name:** `deleteUserFunctionality.js`
+
+#### Summary:
+
+In this step, we integrated a feature allowing authenticated users to delete a user account based on the provided username. This functionality is implemented both on the backend and the frontend.
+
+1. **Backend Controller (authController.js):**
+   - **delete_user_by_username:** This function is responsible for deleting a user from the database based on the username provided in the request. It uses Sequelize's `destroy` method to remove the user entry.
+
+2. **Backend Routes (authHandling.js):**
+   - A new route `/delete/user` was created. This route requires the user to be authenticated before proceeding to delete the specified user. The route is linked to the `delete_user_by_username` function in the controller.
+
+3. **Frontend Interaction (userProfile.js or separate JS file):**
+   - A form submission handler was added to prompt the user to enter the username they wish to delete. This handler sends a POST request to the backend with the provided username.
+
+4. **Frontend Form Handling:**
+   - A simple form is added on the frontend where users can enter a username and submit a request to delete that user.
+
+This functionality demonstrates a full-stack implementation of a user deletion feature, involving both frontend interaction and backend processing.
+
