@@ -32,4 +32,4 @@ While authentication is crucial, it is equally important to implement proper aut
 
 Here is a simple diagram illustrating the difference between authentication and authorization in this context:
 
-![Simple.png](../../mnt/data/image.png)
+![Simple.png](Simple.png)
